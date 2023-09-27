@@ -1,0 +1,29 @@
+/* Use border-box box sizing universally */
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* for debugging */
+body > div {
+  border: 2px solid red;
+}
+
+.content-body > div {
+  border: 2px solid green;
+}
+
+/* ///////////////////////// */
+
+body {
+  display:flex;
+  flex-direction: column;
+}
+
+.content-body{
+
+}
+
