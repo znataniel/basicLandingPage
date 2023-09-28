@@ -1,6 +1,8 @@
 /* Use border-box box sizing universally */
 html{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 *, *:before, *:after {
@@ -16,14 +18,85 @@ body > div {
   border: 2px solid green;
 }
 
+.content-body > div > div {
+  border: 2px solid blue;
+}
+
 /* ///////////////////////// */
 
 body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+
   display:flex;
   flex-direction: column;
 }
 
-.content-body{
-
+.header {
+  display:flex;
+  justify-content: space-between;
+  padding: 16px;
 }
 
+.header > ul.nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header > ul.nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  gap: 6px;
+}
+
+.content-body{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-body > div {
+  display: flex;
+  padding: 64px 256px;
+}
+
+.intro {
+}
+
+.intro-text-wrapper {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+}
+
+.intro-title{
+  font-size: 64px;
+}
+
+.intro-img-wrapper {
+  height: 250px;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information {
+  padding-top: 32px;
+}
+
+.quote {
+}
+
+.sign-up {
+}
+
+.footer{
+  padding: 16px inherit;
+}
