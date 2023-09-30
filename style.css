@@ -35,7 +35,7 @@ body {
 .header {
   display:flex;
   justify-content: space-between;
-  padding: 16px 15%;
+  padding: 16px 25%;
   background-color: #1f2937;
 }
 
@@ -71,16 +71,15 @@ body {
 
 .content-body > div {
   display: flex;
-  padding: 64px 15%;
+  padding: 64px 25%;
 }
 
 .intro {
   background-color: #1f2937;
   display:flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   gap: 24px;
-  flex-wrap: wrap;
 }
 
 .intro-text-wrapper {
@@ -90,7 +89,7 @@ body {
   padding: 16px;
   max-width: 70ch;
   gap: 16px;
-  flex-shrink: 1;
+  flex-shrink: 2;
 }
 
 .intro-title{
@@ -105,9 +104,8 @@ body {
 }
 
 .intro-img-wrapper {
-  height: 250px;
-  width: 600px;
   display: flex;
+  flex: 0 0 500px;
   justify-content: center;
   align-items: center;
   background-color: gray;
@@ -176,7 +174,7 @@ body {
   color: #1f2937;
   font-size: 36px;
   font-style: italic; 
-  text-align: center;
+  text-align: flex-start;
 }
 
 .quote-author {
@@ -197,16 +195,26 @@ body {
   flex: 1;
   display:flex;
   justify-content: space-between;
-  padding: 24px 10%;
+  padding: 5% 10%;
   border-radius: 8px;
+}
+
+.su-main-text, .su-bottom-text {
+  font-size: 18px;
+  color: #f9faf8;
+}
+
+.su-main-text{
+  font-weight: 800;
 }
 
 .su .sign-up-but {
   border: 2px solid #f9faf8;
+  flex-shrink: 0;
 }
 
 .footer{
-  padding: 2em 15%;
+  padding: 2em 25%;
   background-color: #1f2937;
   color: #f9faf8;
   text-align: center;
